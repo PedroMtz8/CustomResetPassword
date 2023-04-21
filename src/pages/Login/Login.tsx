@@ -62,9 +62,9 @@ import { ChangeEventHandler, FormEventHandler, useState } from 'react';
         bg={"gray.700"}>
         <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
           <Stack align={'center'}>
-            <Heading fontSize={'4xl'} color="white">Log in to your account</Heading>
+            <Heading fontSize={'4xl'} color="white">Log in to your DEV account</Heading>
             <Text fontSize={'lg'} color={'white'}>
-              to enjoy all of our cool <Text as="span" color={'blue.400'}>features Finally?
+              development <Text as="span" color={'blue.400'}>branch
               </Text> ✌️
             </Text>
           </Stack>
