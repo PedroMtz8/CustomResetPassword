@@ -1,0 +1,18 @@
+{
+  "projects": {
+    "default": "customresetpassword"
+  },
+  "targets": {
+    "customresetpassword": {
+      "hosting": {
+        "custom-reset-password--dev": [
+          "custom-reset-password--dev"
+        ],
+        "customresetpassword": [
+          "customresetpassword"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
