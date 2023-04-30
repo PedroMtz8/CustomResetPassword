@@ -16,6 +16,7 @@ import { ChangeEventHandler, FormEventHandler, useState } from 'react';
   import {Link} from "react-router-dom"
   import {useToast} from "@chakra-ui/react"
   import { useAuth } from '../../context/AuthProvider';
+import CustomInput from '../../components/CustomInput';
   
   export default function Login() {
     const [form, setForm] = useState({
@@ -62,9 +63,9 @@ import { ChangeEventHandler, FormEventHandler, useState } from 'react';
         bg={"gray.700"}>
         <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
           <Stack align={'center'}>
-            <Heading fontSize={'4xl'} color="white">Log in to your account</Heading>
+            <Heading fontSize={'4xl'} color="white">Log in to your DEV account (CHANGE) </Heading>
             <Text fontSize={'lg'} color={'white'}>
-              to enjoy all of our cool <Text as="span" color={'blue.400'}>features Finally?
+              development <Text as="span" color={'blue.400'}>branch
               </Text> ✌️
             </Text>
           </Stack>
@@ -83,6 +84,11 @@ import { ChangeEventHandler, FormEventHandler, useState } from 'react';
                 <FormLabel>Password</FormLabel>
                 <Input name="password" value={form.password} type="password" borderColor="gray.400" onChange={handleChange} />
               </FormControl>
+              {/* <CustomInput
+                type="text"
+                id="name"
+                label="Nombre"
+              /> */}
               <Stack spacing={10}>
                 <Stack
                   direction={{ base: 'column', sm: 'row' }}
@@ -122,3 +128,5 @@ import { ChangeEventHandler, FormEventHandler, useState } from 'react';
       </Flex>
     );
   }
+
+
