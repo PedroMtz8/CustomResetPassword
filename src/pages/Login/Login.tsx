@@ -16,6 +16,7 @@ import { ChangeEventHandler, FormEventHandler, useState } from 'react';
   import {Link} from "react-router-dom"
   import {useToast} from "@chakra-ui/react"
   import { useAuth } from '../../context/AuthProvider';
+import CustomInput from '../../components/CustomInput';
   
   export default function Login() {
     const [form, setForm] = useState({
@@ -83,6 +84,11 @@ import { ChangeEventHandler, FormEventHandler, useState } from 'react';
                 <FormLabel>Password</FormLabel>
                 <Input name="password" value={form.password} type="password" borderColor="gray.400" onChange={handleChange} />
               </FormControl>
+              {/* <CustomInput
+                type="text"
+                id="name"
+                label="Nombre"
+              /> */}
               <Stack spacing={10}>
                 <Stack
                   direction={{ base: 'column', sm: 'row' }}
@@ -122,3 +128,5 @@ import { ChangeEventHandler, FormEventHandler, useState } from 'react';
       </Flex>
     );
   }
+
+
